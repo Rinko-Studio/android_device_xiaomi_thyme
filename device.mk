@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(THYME_PREBUILT)/kernel/dtb.img:dtb.img
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.thyme
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \

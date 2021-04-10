@@ -66,6 +66,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(THYME_PREBUILT)/kernel/dtb.img:dtb.img
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    SecureElement \
+    com.android.nfc_extras
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayThyme \

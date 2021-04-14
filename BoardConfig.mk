@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from the proprietary version
+-include vendor/xiaomi/thyme/BoardConfigVendor.mk
+
 DEVICE_PATH := device/xiaomi/thyme
 THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 

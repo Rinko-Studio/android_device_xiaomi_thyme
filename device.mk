@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(call inherit-product, vendor/xiaomi/thyme/thyme-vendor.mk)
+
 THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 
 # Enable updating of APEXes

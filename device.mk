@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.thyme
+    android.hardware.lights-service.thyme
 
 # NFC
 PRODUCT_PACKAGES += \

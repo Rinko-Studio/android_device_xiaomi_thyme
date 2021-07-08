@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlayThyme \
     WifiResOverlayThyme \
-    DialerOverlayThyme
+    DialerOverlayThyme \
+    SettingsOverlayThyme
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

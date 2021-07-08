@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
     DialerOverlayThyme \
     SettingsOverlayThyme \
     CarrierConfigOverlayThyme \
-    TelephonyOverlayThyme
+    TelephonyOverlayThyme \
+    SystemUIOverlayThyme
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \

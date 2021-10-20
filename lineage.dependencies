@@ -1,2 +1,6 @@
 [
+  {
+    "repository": "android_device_xiaomi_thyme-prebuilt",
+    "target_path": "device/xiaomi/thyme-prebuilt"
+  }
 ]

@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
     WifiResOverlayThyme \
     DialerOverlayThyme \
     SettingsOverlayThyme \
-    CarrierConfigOverlayThyme
+    CarrierConfigOverlayThyme \
+    TelephonyOverlayThyme
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

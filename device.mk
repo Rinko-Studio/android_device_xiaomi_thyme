@@ -184,16 +184,3 @@ PRODUCT_COPY_FILES += \
 # Vendor boot modules
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(THYME_PREBUILT)/modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libdisplayconfig.qti \
-    libminijail \
-    libnl \
-    libqdMetaData \
-    libwfdaac_vendor \
-    vendor.display.config@2.0
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon

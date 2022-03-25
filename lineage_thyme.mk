@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/thyme/device.mk)
 
-# Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit common LineageOS configurations
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 

@@ -5,9 +5,6 @@
 -->
 <resources>
 
-    <!-- The bottom margin of the keyguard security container -->
-    <dimen name="kg_security_container_min_bottom_margin">632.5px</dimen>
-
     <!-- Default radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">156px</dimen>
 

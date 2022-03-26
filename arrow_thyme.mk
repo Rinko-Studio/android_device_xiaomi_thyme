@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/thyme/device.mk)
 
-# Inherit common LineageOS configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common ArrowOS configurations
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -20,6 +20,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := thyme
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2102J2SC
-PRODUCT_NAME := lineage_thyme
+PRODUCT_NAME := arrow_thyme
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

@@ -16,20 +16,20 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_thyme",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_thyme.rc"],
+    name: "android.hardware.biometrics.fingerprint@2.3-service.thyme",
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.thyme.rc"],
     srcs: [
         "service.cpp",
-        "FingerprintInscreen.cpp"
+        "BiometricsFingerprint.cpp",
     ],
     shared_libs: [
         "libbase",
-        "libhardware",
-        "libhardware_legacy",
         "libhidlbase",
         "liblog",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
         "vendor.xiaomi.hardware.displayfeature@1.0",
         "vendor.xiaomi.hardware.fingerprintextension@1.0",
         "vendor.xiaomi.hardware.touchfeature@1.0",
@@ -37,8 +37,8 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libfod_extension.thyme",
-    srcs: ["FodExtension.cpp"],
+    name: "libudfps_extension.thyme",
+    srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"
     ],

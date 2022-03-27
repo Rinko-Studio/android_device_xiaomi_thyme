@@ -101,9 +101,9 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    $(THYME_PREBUILT)/kernel/dtb.img:dtb.img
+# # Kernel
+# PRODUCT_COPY_FILES += \
+#     $(THYME_PREBUILT)/kernel/dtb.img:dtb.img
 
 # Lights
 PRODUCT_PACKAGES += \

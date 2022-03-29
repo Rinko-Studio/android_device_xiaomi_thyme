@@ -1,0 +1,21 @@
+type hal_fingerprint_thyme, coredomain, domain;
+hal_server_domain(hal_fingerprint_thyme, hal_fingerprint)
+
+type hal_fingerprint_thyme_exec, exec_type, system_file_type, file_type;
+init_daemon_domain(hal_fingerprint_thyme)
+
+# Allow binder communication with hal_displayfeature_xiaomi_default
+binder_call(hal_fingerprint_thyme, hal_displayfeature_xiaomi_default)
+binder_call(hal_fingerprint_thyme, hal_touchfeature_xiaomi_default)
+binder_call(hal_fingerprint_thyme, hal_fingerprint)
+
+# Allow hal_fingerprint_thyme to find hal_displayfeature_xiaomi_hwservice
+allow hal_fingerprint_thyme hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
+
+# Allow hal_fingerprint_thyme to find hal_fingerprint_hwservice_xiaomi
+allow hal_fingerprint_thyme vendor_hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
+
+allow hal_fingerprint_thyme hal_touchfeature_xiaomi_hwservice:hwservice_manager find;
+
+# Allow access to the hals
+hal_client_domain(hal_fingerprint_thyme, hal_fingerprint)

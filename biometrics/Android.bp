@@ -13,29 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_binary {
-    relative_install_path: "hw",
-    defaults: ["hidl_defaults"],
-    name: "android.hardware.biometrics.fingerprint@2.3-service.thyme",
-    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.thyme.rc"],
-    srcs: [
-        "service.cpp",
-        "BiometricsFingerprint.cpp",
-    ],
-    shared_libs: [
-        "libbase",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "android.hardware.biometrics.fingerprint@2.1",
-        "android.hardware.biometrics.fingerprint@2.2",
-        "android.hardware.biometrics.fingerprint@2.3",
-        "vendor.xiaomi.hardware.displayfeature@1.0",
-        "vendor.xiaomi.hardware.fingerprintextension@1.0",
-        "vendor.xiaomi.hardware.touchfeature@1.0",
-    ],
-}
-
 cc_library_static {
     name: "libudfps_extension.thyme",
     srcs: ["UdfpsExtension.cpp"],

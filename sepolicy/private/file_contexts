@@ -11,7 +11,7 @@
 
 # HALs
 /system/bin/hw/android\.hardware\.lights-service\.thyme        u:object_r:hal_light_default_exec:s0
-/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.thyme                                 u:object_r:hal_fingerprint_thyme_exec:s0
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.thyme                                 u:object_r:hal_fingerprint_thyme_exec:s0
 
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0

@@ -1,7 +1,7 @@
-type hal_fingerprint_thyme, coredomain, domain;
+type hal_fingerprint_thyme, domain;
 hal_server_domain(hal_fingerprint_thyme, hal_fingerprint)
 
-type hal_fingerprint_thyme_exec, exec_type, system_file_type, file_type;
+type hal_fingerprint_thyme_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_fingerprint_thyme)
 
 # Allow binder communication with hal_displayfeature_xiaomi_default

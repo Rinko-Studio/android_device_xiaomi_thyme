@@ -1,6 +1,26 @@
 [
   {
-    "repository": "android_device_xiaomi_thyme-prebuilt",
-    "target_path": "device/xiaomi/thyme-prebuilt"
+    "repository"   : "kernel_xiaomi_thyme",
+    "target_path"  : "kernel/xiaomi/thyme",
+    "remote"       : "pixel-devices",
+    "branch"       : "twelve"
+  },
+  { 
+    "repository"   : "vendor_xiaomi_thyme",
+    "target_path"  : "vendor/xiaomi/thyme",
+    "branch"       : "twelve",
+    "remote"       : "pixel-devices-blobs"
+  },
+  { 
+    "repository"   : "vendor_xiaomi_thyme-prebuilt",
+    "target_path"  : "device/xiaomi/thyme-prebuilt",
+    "branch"       : "twelve",
+    "remote"       : "pixel-devices-blobs"
+  },
+  { 
+    "repository"   : "hardware_xiaomi",
+    "target_path"  : "hardware/xiaomi",
+    "remote"       : "pixel",
+    "branch"       : "twelve"
   }
 ]

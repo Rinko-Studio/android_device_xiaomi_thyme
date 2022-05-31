@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_thyme.mk
+    $(LOCAL_DIR)/exthm_thyme.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_thyme-eng \
-    evolution_thyme-userdebug \
-    evolution_thyme-user
+    exthm_thyme-eng \
+    exthm_thyme-userdebug \
+    exthm_thyme-user
